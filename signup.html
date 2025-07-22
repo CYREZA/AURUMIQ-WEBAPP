@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - AurumIQ</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    input {
+      display: block;
+      width: 80%;
+      margin: 15px auto;
+      padding: 12px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      background-color: #ffe680;
+      color: #000;
+    }
+
+    .submit-btn {
+      margin-top: 30px;
+      background-color: #6fe16f;
+      padding: 14px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Telegram ID</h2>
+
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Nick name" required />
+    <input type="text" placeholder="TRX Address" required />
+    <input type="email" placeholder="Email address" required />
+    <button type="submit" class="submit-btn">Done</button>
+  </form>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      alert("Signup info submitted! (You can connect this to your backend)");
+      // Here you can use fetch() or Telegram WebApp API to send the data
+    }
+  </script>
+</body>
+</html>
